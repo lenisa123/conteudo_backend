@@ -28,12 +28,12 @@ var_dump($alunos);
 echo "<p>&nbsp;</p><pre>";
 //imprimir todos os valores de um vetor
 //utilizando foreach
-
+//     variável   índice   valor
 foreach($alunos as $key => $value){
     printf("%23s\n", "+-----------+");
     printf("%9s | %9s | \n", $key,$value);
-    printf("%23s", "+-----------+");
 }
+printf("%23s", "+-----------+");
 
 ?>
 </pre>
