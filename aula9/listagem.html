@@ -11,24 +11,43 @@
     <hr>
 
     <table id="produtos" border=1 with="100%">
-
+            <tr>
+                <th>Nome</th> 
+                <th>Marca</th>
+                <th>Preço</th>
+            </tr>
     </table>
     <script>
         // está pegando o elemento tabela do HTML
         let tabela = document.querySelector("#produtos");
 
-        //vamos criar uma linha nessa tabela
-        let linha = tabela.insertRow();
+            function inserirLinha(nome, marca, preco){
 
-        //vamos criar as células na tabela
-        let celNome = linha.insertCell();
-        let celMarca = linha.insertCell();
-        let celPreco = linha.insertCell();
+            //vamos criar uma linha nessa tabela
+            let linha = tabela.insertRow();
 
-        //coloca valores nas células
-        celNome.innerHTML="xxxx";
-        celMarca.innerHTML="xxxx";
-        celPreco.innerHTML="xxxx";
+            //vamos criar as células na tabela
+            let celNome = linha.insertCell();
+            let celMarca = linha.insertCell();
+            let celPreco = linha.insertCell();
+
+            //coloca valores nas células
+            celNome.innerHTML=nome;
+            celMarca.innerHTML=marca;
+            celPreco.innerHTML=preco;
+        }
+
+        //fetch() abre uma URL
+        fetch("http://localhost/3infob/conteudo_backend/aula9/produtos.php")
+        .then($resposta => $resposta.json())
+        .then($json => {
+            for(var i=0; i<3; i++){
+                inserirLinha($json[i]["nome"],
+                            $json[i]["marca"],
+                            $json[i]["preco"]);   
+            }
+        });
+
     </script>
 </body>
 </html>
