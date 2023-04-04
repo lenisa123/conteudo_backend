@@ -66,8 +66,8 @@ $noticia8 = [
 $noticia9 = [
     "titulo" => "Blasfêmia cobra seu preço",
     "materia" => "Após blasfêmia com o todo poderoso, homem tem a audacia de escrever Deus com d minusculo. Após isso a ira do Senhor pairou sobre ele, o transformando numa criatura abominavel",
-    "foto" => "https://twitter.com/NgmOdeiaIsso/status/1581128685805244416/photo/1",
-    "chamada" => "Escreveu Deus com d minúsculo e vira filtro de barro, em cachoeirinha RS",
+    "foto" => "https://pbs.twimg.com/media/FfFMKNuXEAAVyvJ?format=jpg&name=small",
+    "chamada" => "Homem escreveu Deus com d minúsculo e vira filtro de barro, em cachoeirinha RS",
 ];
 
 
