@@ -17,13 +17,13 @@
     <form action="usuario/inserir.php" method="post">
         
         <label>Nome</label><br>
-        <input type="text" name="nome" value="<?php echo $usuario->nome;?>"><br>
+        <input type="text" name="nome" value="<?php echo $usuario->nome ?? "";?>"><br>
 
         <label>Login</label><br>
-        <input type="text" name="login" value="<?php echo $usuario->login;?>"><br>
+        <input type="text" name="login" value="<?php echo $usuario->login ?? "";?>"><br>
 
         <label>Senha</label><br>
-        <input type="password" name="senha" value="<?php echo $usuario->senha;?>"><br>
+        <input type="password" name="senha" value="<?php echo $usuario->senha ?? "";?>"><br>
 
         <button type="submit">Inserir</button>
         
