@@ -24,6 +24,7 @@
     <tr>
       <th scope="col">Nome</th>
       <th scope="col">Login</th>
+      <th scope="col">Foto</th>
       <th scope="col">Ações</th>
     </tr>
   </thead>
@@ -32,6 +33,7 @@
     <tr>
       <td><?= $usuario->nome ?></td>
       <td><?= $usuario->login ?></td>
+      <td><img src="uploads/<?= $usuario->foto ?>" height="40px"></td>
       <td>
         <a href="usuario/excluir.php?id=<?= $usuario->idusuario ?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Excluir</a>
         <a href="form_usuario.php?id=<?= $usuario->idusuario ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Atualizar</a>
