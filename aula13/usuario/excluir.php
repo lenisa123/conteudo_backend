@@ -1,7 +1,7 @@
 <?php
    
    //importa o arquivo de conexão
-   require_once "../conexao.php";
+   require_once "../banco/conexao.php";
 
    $id = $_GET['id'];
 
@@ -18,7 +18,7 @@
    $comando->execute();
 
    //volta para a listagem de usuarios
-   header("Location: ../usuarios.php");
+   header("Location: index.php");
 
    
 
