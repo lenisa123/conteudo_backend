@@ -1,4 +1,4 @@
-<?php require "usuario/consultar_todos.php"; ?>
+<?php require "consultar_todos.php"; ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,7 +14,7 @@
     <h1>Usuarios</h1>
     <hr>
 
-    <a href ="form_usuario.php" class="btn btn-success">
+    <a href ="formulario.php" class="btn btn-success">
         Inserir Novo
     </a>
 
@@ -33,10 +33,10 @@
     <tr>
       <td><?= $usuario->nome ?></td>
       <td><?= $usuario->login ?></td>
-      <td><img src="uploads/<?= $usuario->foto ?>" height="40px"></td>
+      <td><img src="../uploads/<?= $usuario->foto ?>" height="40px"></td>
       <td>
-        <a href="usuario/excluir.php?id=<?= $usuario->idusuario ?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Excluir</a>
-        <a href="form_usuario.php?id=<?= $usuario->idusuario ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Atualizar</a>
+        <a href="excluir.php?id=<?= $usuario->idusuario ?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Excluir</a>
+        <a href="formulario.php?id=<?= $usuario->idusuario ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Atualizar</a>
       </td>
     </tr>
   <?php endforeach; ?>
