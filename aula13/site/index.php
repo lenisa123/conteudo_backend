@@ -4,14 +4,9 @@
     //include_once: faz a inclusao apenas uma vez
     include_once "../noticia/consultar_todos.php";
     include_once "../template/cabecalho.php";
-    include_once "../template/menu.php";
+    include_once "../template/menu_restrito.php";
     
 ?>
-
-
-
-
-    
 
     <!-- noticias -->
     <div class="container">

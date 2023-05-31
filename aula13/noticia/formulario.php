@@ -1,6 +1,7 @@
 <?php
     require_once "consultar_por_id.php";
     require_once "../template/cabecalho.php";
+    require_once "../template/menu_restrito.php";
 ?>
 
 <div class="container">

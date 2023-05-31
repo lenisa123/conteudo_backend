@@ -19,6 +19,6 @@
    $categorias = [];
    //fetch_assoc
    while ($categoria = $resultados->fetch_object()){
-      $categorias[] = $noticia;
+      $categorias[] = $categoria;
    }
    
