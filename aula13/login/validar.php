@@ -25,10 +25,16 @@
         $usuario = $resultados->fetch_object();
 
         //imprimir o resultado
-        var_dump($usuario);
-        
-    }else{
-        header("Location: formulario.php");
+        if($usuario != NULL and password_verify($senha, $usuario->senha)){
+            
+            session_start();
+            $_SESSION['usuario'] = $usuario->nome;
+            header("Location: ../noticia/index.php");
+            die();
+
+
+            }
     }
+       // header("Location: formulario.php");
 
 ?>
