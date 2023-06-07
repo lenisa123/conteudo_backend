@@ -17,7 +17,7 @@
                         <img src="../uploads/<?php echo $noticia->foto; ?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title"><?php echo $noticia->titulo?></h3>
-                            <a href="ler.php?id=<?php echo $noticia->idnoticia; ?>" class="btn btn-primary"> Ler mais</a>
+
                         </div>
                     </div>
                     </div>
