@@ -1,4 +1,4 @@
-<?php require "../noticia/consultar_categorias.php";?>
+<?php require "../animal/consultar_categorias.php";?>
 
 <!--Menu principal -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -10,19 +10,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
-      <?php foreach($categorias as $noticia): ?>
+      <?php foreach($racas as $animal): ?>
         
         <li class="nav-item">
           <a class="nav-link" 
-          href="index.php?assunto=<?php echo $noticia->categoria; ?>">
-          <?php echo $noticia->categoria; ?></a>
+          href="index.php?assunto=<?php echo $animal->raca; ?>">
+          <?php echo $animal->raca; ?></a>
         </li>
 
       <?php endforeach; ?>
 
       <li class="nav-item">
           <a class="nav-link" 
-          href="../noticia/index.php">
+          href="../animal/index.php">
           Acesso Restrito</a>
         </li>
         

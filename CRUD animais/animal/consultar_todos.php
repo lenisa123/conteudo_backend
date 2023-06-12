@@ -4,7 +4,7 @@
    require_once "../banco/conexao.php";
 
    //cria uma variável com um comando SQL
-   $SQL = "SELECT * FROM noticia where categoria like ?";
+   $SQL = "SELECT * FROM animal where raca like ?";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
@@ -24,10 +24,10 @@
    $resultados = $comando->get_result();
 
    //pega todas linha de resultado da consulta
-   $noticias = [];
+   $animais = [];
    //fetch_assoc
-   while ($noticia = $resultados->fetch_object()){
-      $noticias[] = $noticia;
+   while ($animal = $resultados->fetch_object()){
+      $animais[] = $animal;
    }
    
 

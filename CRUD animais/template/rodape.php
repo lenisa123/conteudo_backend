@@ -2,7 +2,7 @@
 
     <!-- Rodapé -->    
     <footer class="bg-dark p-3 text-white text-center">
-          Meu Site de notícias @ 2023
+          Meu Site de animais @ 2023
     </footer>
     <!--Final do rodapé--> 
     

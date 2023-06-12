@@ -18,8 +18,8 @@
 
         <li class="nav-item">
           <a class="nav-link" 
-          href="../noticia/index.php">
-          Noticias</a>
+          href="../animal/index.php">
+          Animais</a>
         </li>
 
         <li class="nav-item">

@@ -7,7 +7,7 @@
    $id = $_GET['id'];
 
    //cria uma variável com um comando SQL
-   $SQL = "DELETE FROM `noticia` WHERE  `idnoticia`= ? ;";
+   $SQL = "DELETE FROM `animal` WHERE  `codigo`= ? ;";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);

@@ -9,7 +9,7 @@
    $id = $_GET['id'];
 
    //cria uma variável com um comando SQL
-   $SQL = "SELECT * FROM `noticia` WHERE  `idnoticia`= ? ;";
+   $SQL = "SELECT * FROM `animal` WHERE  `codigo`= ? ;";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
@@ -24,7 +24,7 @@
    $resultados = $comando->get_result();
 
    //pega a primeira linha de resultado da consulta
-   $noticia = $resultados->fetch_object();
+   $animal = $resultados->fetch_object();
 
    //imprimir o resultado
    //var_dump($usuario);

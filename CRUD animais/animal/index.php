@@ -7,7 +7,7 @@
 ?>
 
     <div class="container">
-    <h1>Notícias</h1> 
+    <h1>Animais</h1> 
     <hr>
   <div class="text-end">
     <a href="formulario.php" class="btn btn-success">
@@ -17,25 +17,31 @@
     <table class="table" id="tabela_dados">
     <thead>
         <tr>
-            <th scope="col">Título</th>
-            <th scope="col">Categoria</th>
+            <th scope="col">Nome do animal</th>
+            <th scope="col">Nome do dono</th>
+            <th scope="col">Raça</th>
+            <th scope="col">Peso</th>
+            <th scope="col">Idade</th>
             <th scope="col">Foto</th>
             <th scope="col">Ações</th>
         </tr>
     </thead>
     <tbody>
-        <?php foreach($noticias as $noticia): ?>
+        <?php foreach($animais as $animal): ?>
         <tr>
-            <td><?= $noticia -> titulo ?></td>
-            <td><?= $noticia -> categoria ?></td>
-            <td><img src="../uploads/<?= $noticia->foto ?>" height="30px"></td>
+            <td><?= $animal -> nomedoanimal ?></td>
+            <td><?= $animal -> nomedodono ?></td>
+            <td><?= $animal -> raca ?></td>
+            <td><?= $animal -> peso ?></td>
+            <td><?= $animal -> idade ?></td>
+            <td><img src="../uploads/<?= $animal->foto ?>" height="30px"></td>
             <td class="text_end" width="25%">
-              <a href="excluir.php?id=<?= $noticia -> idnoticia ?>" class="btn btn-danger"> 
+              <a href="excluir.php?id=<?= $animal -> codigo ?>" class="btn btn-danger"> 
                 <i class="fa-solid fa-trash-can"></i> 
                 Excluir
               </a>
 
-                <a href="formulario.php?id=<?= $noticia -> idnoticia ?>" class="btn btn-primary"> 
+                <a href="formulario.php?id=<?= $animal -> codigo ?>" class="btn btn-primary"> 
                 <i class="fa-solid fa-pen-to-square"></i> 
                 Atualizar
               </a>
